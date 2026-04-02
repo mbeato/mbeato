@@ -49,6 +49,12 @@ CTO leading a 3-engineer team building a sports athlete sponsorship platform —
   <a href="https://git-scm.com"><img height="32" width="32" src="https://cdn.simpleicons.org/git/F05032" alt="Git" /></a>
 </p>
 
+#### this week
+
+<div align="center">
+  <a href="https://wakatime.com/@mbeato"><img src="https://wakatime.com/share/@mbeato/399de76e-e3cb-475c-8187-098463ea4cf1.svg" alt="WakaTime coding activity" width="500" /></a>
+</div>
+
 <br/>
 
 <div align="center">
