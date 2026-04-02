@@ -56,3 +56,4 @@ Leading a 3-engineer team building a sports athlete sponsorship platform — Nes
 <div align="center">
   <sub>building something at a seed-stage company? i'd love to chat</sub>
 </div>
+
