@@ -14,7 +14,7 @@
 
 **[APIMesh](https://github.com/mbeato/APIMesh)** — 23 pay-per-call web analysis APIs + 16-tool MCP server with autonomous API generation. Security audits, SEO, tech stack detection. Dual payments via x402 + Stripe MPP. Self-deployed on Hetzner with Bun/Hono and Caddy. First-party service in the Stripe/Tempo MPP ecosystem. **1,000+ req/day at 99% uptime.**
 
-**[Tonos](https://tonos.apimesh.xyz)** — Voice profile API. Submit writing samples, get a structured voice profile back. Any app or AI agent calls it to generate messages that sound like you, not like AI. Bun + Hono + PostgreSQL + Claude structured outputs. Stripe billing + MCP server + OAuth.
+**[Tonos](https://tonos.fyi)** — Voice profile API. Submit writing samples, get a structured voice profile back. Any app or AI agent calls it to generate messages that sound like you, not like AI. Bun + Hono + PostgreSQL + Claude structured outputs. Stripe billing + MCP server + OAuth.
 
 **[awesome-mpp](https://github.com/mbeato/awesome-mpp)** — The community registry for Machine Payments Protocol — 180+ tools, SDKs, and services across 15+ chains.
 
