@@ -22,13 +22,32 @@
 
 CTO leading a 3-engineer team building a sports athlete sponsorship platform — NestJS/GraphQL backend (250+ operations), React/Next.js web apps, React Native mobile app (Expo 53), deployed on AWS EKS with a 5-stage GitLab CI/CD pipeline. Serving 60+ athletes globally.
 
-<details>
-<summary><b>stack</b></summary>
-<br/>
+#### stack
 
-`TypeScript` `JavaScript` `Python` `React` `Next.js` `NestJS` `GraphQL` `React Native` `Bun` `Hono` `Node.js` `PostgreSQL` `Redis` `Docker` `Kubernetes` `AWS` `Stripe` `x402/MPP` `Caddy` `Vercel`
-
-</details>
+<p align="center">
+  <a href="https://www.typescriptlang.org"><img height="32" width="32" src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" /></a>&nbsp;&nbsp;
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img height="32" width="32" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" /></a>&nbsp;&nbsp;
+  <a href="https://www.python.org"><img height="32" width="32" src="https://cdn.simpleicons.org/python/3776AB" alt="Python" /></a>&nbsp;&nbsp;
+  <a href="https://react.dev"><img height="32" width="32" src="https://cdn.simpleicons.org/react/61DAFB" alt="React" /></a>&nbsp;&nbsp;
+  <a href="https://nextjs.org"><img height="32" width="32" src="https://cdn.simpleicons.org/nextdotjs/white" alt="Next.js" /></a>&nbsp;&nbsp;
+  <a href="https://nestjs.com"><img height="32" width="32" src="https://cdn.simpleicons.org/nestjs/E0234E" alt="NestJS" /></a>&nbsp;&nbsp;
+  <a href="https://graphql.org"><img height="32" width="32" src="https://cdn.simpleicons.org/graphql/E10098" alt="GraphQL" /></a>&nbsp;&nbsp;
+  <a href="https://reactnative.dev"><img height="32" width="32" src="https://cdn.simpleicons.org/react/61DAFB" alt="React Native" /></a>&nbsp;&nbsp;
+  <a href="https://bun.sh"><img height="32" width="32" src="https://cdn.simpleicons.org/bun/FBF0DF" alt="Bun" /></a>&nbsp;&nbsp;
+  <a href="https://hono.dev"><img height="32" width="32" src="https://cdn.simpleicons.org/hono/E36002" alt="Hono" /></a>
+</p>
+<p align="center">
+  <a href="https://nodejs.org"><img height="32" width="32" src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js" /></a>&nbsp;&nbsp;
+  <a href="https://www.postgresql.org"><img height="32" width="32" src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" /></a>&nbsp;&nbsp;
+  <a href="https://redis.io"><img height="32" width="32" src="https://cdn.simpleicons.org/redis/FF4438" alt="Redis" /></a>&nbsp;&nbsp;
+  <a href="https://www.docker.com"><img height="32" width="32" src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" /></a>&nbsp;&nbsp;
+  <a href="https://kubernetes.io"><img height="32" width="32" src="https://cdn.simpleicons.org/kubernetes/326CE5" alt="Kubernetes" /></a>&nbsp;&nbsp;
+  <a href="https://aws.amazon.com"><img height="32" width="32" src="https://cdn.simpleicons.org/amazonwebservices/FF9900" alt="AWS" /></a>&nbsp;&nbsp;
+  <a href="https://stripe.com"><img height="32" width="32" src="https://cdn.simpleicons.org/stripe/635BFF" alt="Stripe" /></a>&nbsp;&nbsp;
+  <a href="https://vercel.com"><img height="32" width="32" src="https://cdn.simpleicons.org/vercel/white" alt="Vercel" /></a>&nbsp;&nbsp;
+  <a href="https://caddyserver.com"><img height="32" width="32" src="https://cdn.simpleicons.org/caddy/1F88C0" alt="Caddy" /></a>&nbsp;&nbsp;
+  <a href="https://git-scm.com"><img height="32" width="32" src="https://cdn.simpleicons.org/git/F05032" alt="Git" /></a>
+</p>
 
 <br/>
 
