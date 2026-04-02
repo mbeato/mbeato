@@ -177,12 +177,12 @@
   <text class="title" x="450" y="120" text-anchor="middle"
     font-family="'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
     font-size="54" font-weight="600" fill="#f0f0f5" letter-spacing="1"
-    filter="url(#textGlow)">Max Beato</text>
+    filter="url(#textGlow)">Maximus Beato</text>
 
   <!-- Tagline -->
   <text class="subtitle" x="450" y="160" text-anchor="middle"
     font-family="'SF Mono', 'Fira Code', 'JetBrains Mono', monospace"
-    font-size="13" fill="#8b8b9e" letter-spacing="4">BUILDER  ·  CTO  ·  PURDUE CS '26</text>
+    font-size="13" fill="#8b8b9e" letter-spacing="4">CTO  ·  PURDUE CS '26</text>
 
   <!-- Thin separator line -->
   <line class="line-accent" x1="380" y1="185" x2="520" y2="185" stroke="#4f46e5" stroke-width="0.5" opacity="0.4"/>
