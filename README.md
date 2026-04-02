@@ -49,6 +49,16 @@ CTO leading a 3-engineer team building a sports athlete sponsorship platform —
   <a href="https://git-scm.com"><img height="32" width="32" src="https://cdn.simpleicons.org/git/F05032" alt="Git" /></a>
 </p>
 
+#### numbers
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/stats.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/stats.svg" />
+    <img alt="Stats" src="assets/stats.svg" width="100%" />
+  </picture>
+</div>
+
 <br/>
 
 <div align="center">
