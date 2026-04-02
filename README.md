@@ -5,7 +5,7 @@
 </picture>
 
 <div align="center">
-  <sub>building tools for the agentic web · <a href="mailto:maximus.beato@gmail.com">email</a> · <a href="https://www.linkedin.com/in/maximus-beato/">linkedin</a> · <a href="https://mbeato.dev">site</a></sub>
+  <a href="mailto:maximus.beato@gmail.com">email</a> · <a href="https://www.linkedin.com/in/maximus-beato/">linkedin</a> · <a href="https://mbeato.dev">site</a>
 </div>
 
 <br/>
@@ -48,16 +48,6 @@ CTO leading a 3-engineer team building a sports athlete sponsorship platform —
   <a href="https://caddyserver.com"><img height="32" width="32" src="https://cdn.simpleicons.org/caddy/1F88C0" alt="Caddy" /></a>&nbsp;&nbsp;
   <a href="https://git-scm.com"><img height="32" width="32" src="https://cdn.simpleicons.org/git/F05032" alt="Git" /></a>
 </p>
-
-#### numbers
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/stats.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="assets/stats.svg" />
-    <img alt="Stats" src="assets/stats.svg" width="100%" />
-  </picture>
-</div>
 
 <br/>
 

@@ -1,134 +1,200 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <!-- Deep background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06060a"/>
+      <stop offset="50%" stop-color="#0c0c18"/>
+      <stop offset="100%" stop-color="#0a0a14"/>
+    </linearGradient>
 
-        .container {
-          width: 900px;
-          height: 220px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background: #0d1117;
-          position: relative;
-          overflow: hidden;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-        }
+    <!-- Orb glows -->
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#4f46e5" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#7c3aed" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#2563eb" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
 
-        /* Subtle animated gradient line at top */
-        .accent-line {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 200%;
-          height: 2px;
-          background: linear-gradient(90deg, transparent 0%, #58a6ff 25%, #bc8cff 50%, #58a6ff 75%, transparent 100%);
-          animation: sweep 4s ease-in-out infinite;
-        }
+    <!-- Mesh gradient overlay -->
+    <radialGradient id="mesh1" cx="20%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mesh2" cx="80%" cy="70%" r="35%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
 
-        @keyframes sweep {
-          0% { transform: translateX(-50%); }
-          100% { transform: translateX(0%); }
-        }
+    <!-- Grain texture -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.08"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="overlay"/>
+    </filter>
 
-        .name {
-          font-size: 48px;
-          font-weight: 700;
-          color: #f0f6fc;
-          letter-spacing: 2px;
-          opacity: 0;
-          transform: translateY(8px);
-          animation: fadeUp 0.8s ease forwards;
-          animation-delay: 0.3s;
-        }
+    <!-- Soft glow filter -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-        .tagline {
-          font-size: 15px;
-          font-weight: 400;
-          color: #8b949e;
-          letter-spacing: 3px;
-          margin-top: 12px;
-          opacity: 0;
-          transform: translateY(8px);
-          animation: fadeUp 0.8s ease forwards;
-          animation-delay: 0.7s;
-        }
+    <!-- Text glow -->
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-        .dots {
-          display: flex;
-          gap: 8px;
-          margin-top: 20px;
-          opacity: 0;
-          animation: fadeUp 0.8s ease forwards;
-          animation-delay: 1.1s;
-        }
+    <!-- Subtle grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.03"/>
+    </pattern>
 
-        .dot {
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          animation: pulse 3s ease-in-out infinite;
-        }
+    <!-- Animated accent line gradient -->
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#4f46e5" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#7c3aed" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
 
-        .dot:nth-child(1) {
-          background: #58a6ff;
-          animation-delay: 0s;
-        }
-        .dot:nth-child(2) {
-          background: #bc8cff;
-          animation-delay: 1s;
-        }
-        .dot:nth-child(3) {
-          background: #58a6ff;
-          animation-delay: 2s;
-        }
+  <style>
+    @keyframes float1 {
+      0%, 100% { transform: translate(0, 0); }
+      33% { transform: translate(15px, -10px); }
+      66% { transform: translate(-10px, 8px); }
+    }
+    @keyframes float2 {
+      0%, 100% { transform: translate(0, 0); }
+      33% { transform: translate(-12px, 12px); }
+      66% { transform: translate(8px, -6px); }
+    }
+    @keyframes float3 {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(10px, 6px); }
+    }
+    @keyframes lineSweep {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-        @keyframes fadeUp {
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
+    .orb-1 { animation: float1 12s ease-in-out infinite; }
+    .orb-2 { animation: float2 15s ease-in-out infinite; }
+    .orb-3 { animation: float3 10s ease-in-out infinite; }
 
-        @keyframes pulse {
-          0%, 100% { opacity: 0.4; transform: scale(1); }
-          50% { opacity: 1; transform: scale(1.3); }
-        }
+    .sweep-line { animation: lineSweep 5s ease-in-out infinite; }
 
-        /* Light mode */
-        @media (prefers-color-scheme: light) {
-          .container { background: #ffffff; }
-          .name { color: #1f2328; }
-          .tagline { color: #656d76; }
-          .accent-line {
-            background: linear-gradient(90deg, transparent 0%, #0969da 25%, #8250df 50%, #0969da 75%, transparent 100%);
-          }
-          .dot:nth-child(1) { background: #0969da; }
-          .dot:nth-child(2) { background: #8250df; }
-          .dot:nth-child(3) { background: #0969da; }
-        }
+    .title {
+      animation: slideUp 0.8s ease forwards;
+      animation-delay: 0.2s;
+      opacity: 0;
+    }
+    .subtitle {
+      animation: slideUp 0.8s ease forwards;
+      animation-delay: 0.5s;
+      opacity: 0;
+    }
+    .line-accent {
+      animation: fadeIn 1.2s ease forwards;
+      animation-delay: 0.8s;
+      opacity: 0;
+    }
 
-        /* Accessibility */
-        @media (prefers-reduced-motion: reduce) {
-          *, *::before, *::after {
-            animation-duration: 0.01ms !important;
-            animation-iteration-count: 1 !important;
-          }
-          .name, .tagline, .dots { opacity: 1; transform: none; }
-        }
-      </style>
-      <div class="container">
-        <div class="accent-line"></div>
-        <div class="name">Max Beato</div>
-        <div class="tagline">BUILDER · CTO · PURDUE CS '26</div>
-        <div class="dots">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+    @media (prefers-reduced-motion: reduce) {
+      .orb-1, .orb-2, .orb-3 { animation: none; }
+      .sweep-line { animation: none; }
+      .title, .subtitle, .line-accent { animation: none; opacity: 1; }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="900" height="280" fill="url(#bg)"/>
+
+  <!-- Grid overlay -->
+  <rect width="900" height="280" fill="url(#grid)"/>
+
+  <!-- Mesh gradients for depth -->
+  <rect width="900" height="280" fill="url(#mesh1)"/>
+  <rect width="900" height="280" fill="url(#mesh2)"/>
+
+  <!-- Floating orbs - ambient light blobs -->
+  <g class="orb-1">
+    <ellipse cx="180" cy="100" rx="140" ry="120" fill="url(#orb1)" filter="url(#softGlow)"/>
+  </g>
+  <g class="orb-2">
+    <ellipse cx="720" cy="180" rx="160" ry="130" fill="url(#orb2)" filter="url(#softGlow)"/>
+  </g>
+  <g class="orb-3">
+    <ellipse cx="450" cy="220" rx="120" ry="100" fill="url(#orb3)" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- Subtle dot scatter -->
+  <circle cx="120" cy="60" r="1" fill="#818cf8" opacity="0.3"/>
+  <circle cx="340" cy="40" r="0.8" fill="#a5b4fc" opacity="0.25"/>
+  <circle cx="560" cy="55" r="1.2" fill="#818cf8" opacity="0.2"/>
+  <circle cx="780" cy="45" r="0.8" fill="#c4b5fd" opacity="0.3"/>
+  <circle cx="200" cy="230" r="1" fill="#a5b4fc" opacity="0.2"/>
+  <circle cx="650" cy="240" r="0.8" fill="#818cf8" opacity="0.25"/>
+  <circle cx="400" cy="250" r="1" fill="#c4b5fd" opacity="0.15"/>
+  <circle cx="830" cy="100" r="0.6" fill="#a5b4fc" opacity="0.2"/>
+  <circle cx="70" cy="180" r="0.8" fill="#818cf8" opacity="0.15"/>
+
+  <!-- Animated accent line -->
+  <g class="line-accent">
+    <g class="sweep-line">
+      <rect x="0" y="0" width="900" height="1.5" fill="url(#accentLine)" rx="1"/>
+    </g>
+  </g>
+
+  <!-- Name -->
+  <text class="title" x="450" y="120" text-anchor="middle"
+    font-family="'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="54" font-weight="600" fill="#f0f0f5" letter-spacing="1"
+    filter="url(#textGlow)">Max Beato</text>
+
+  <!-- Tagline -->
+  <text class="subtitle" x="450" y="160" text-anchor="middle"
+    font-family="'SF Mono', 'Fira Code', 'JetBrains Mono', monospace"
+    font-size="13" fill="#8b8b9e" letter-spacing="4">BUILDER  ·  CTO  ·  PURDUE CS '26</text>
+
+  <!-- Thin separator line -->
+  <line class="line-accent" x1="380" y1="185" x2="520" y2="185" stroke="#4f46e5" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Bottom tagline -->
+  <text class="subtitle" x="450" y="210" text-anchor="middle"
+    font-family="'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="12" fill="#5a5a6e" letter-spacing="1.5">building tools for the agentic web</text>
+
+  <!-- Film grain overlay -->
+  <rect width="900" height="280" filter="url(#grain)" opacity="0.4"/>
+
+  <!-- Bottom subtle line -->
+  <line class="line-accent" x1="0" y1="279" x2="900" y2="279" stroke="#4f46e5" stroke-width="0.5" opacity="0.15"/>
 </svg>
