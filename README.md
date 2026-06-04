@@ -1,12 +1,8 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/header.svg" />
-  <img alt="Max Beato" src="assets/header.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header.svg?v=2" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/header.svg?v=2" />
+  <img alt="Maximus Beato" src="assets/header.svg?v=2" width="100%" />
 </picture>
-
-<div align="center">
-  <a href="mailto:maximus.beato@gmail.com">email</a> · <a href="https://www.linkedin.com/in/maximus-beato/">linkedin</a> · <a href="https://mbeato.dev">site</a>
-</div>
 
 <br/>
 
