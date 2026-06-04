@@ -27,7 +27,6 @@
   <!-- centered tagline -->
   <text x="450" y="218" text-anchor="middle" font-size="12.5" letter-spacing="1" fill="#6b7280">building tools for the agentic web — tonos · apimesh · awesome-mpp</text>
 
-  <!-- link row + status -->
-  <text x="40" y="256" font-size="12" fill="#8b949e">◇ linkedin ↗<tspan dx="18" fill="#4b5563">|</tspan><tspan dx="18" fill="#8b949e">◇ email ↗</tspan><tspan dx="18" fill="#4b5563">|</tspan><tspan dx="18" fill="#8b949e">◇ site ↗</tspan></text>
-  <text x="860" y="256" text-anchor="end" font-size="12" fill="#6b7280">available for seed-stage roles ↗</text>
+  <!-- status -->
+  <text x="450" y="256" text-anchor="middle" font-size="12" letter-spacing="1" fill="#6b7280">available for seed-stage roles ↗</text>
 </svg>
