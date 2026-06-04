@@ -4,21 +4,15 @@
    Source: Nozomio (nozomio.com) + Ghostty ASCII mark, corpus refs
    Specific decisions adopted:
      1. Large density-block ASCII figlet wordmark (ANSI Shadow) as the hero centerpiece
-     2. Tiny uppercase mono labels pinned to all four corners; "ONLINE ●" green status (Nozomio)
+     2. Tiny uppercase mono labels pinned to the corners (Nozomio's sparse chrome)
      3. "◇ label ↗" link rows, diamond glyph + trailing arrow (Nozomio's link grammar)
   -->
-  <style>
-    .blink { animation: blink 1.15s steps(1) infinite; }
-    @keyframes blink { 0%,50% { opacity: 1; } 50.01%,100% { opacity: 0; } }
-    @media (prefers-reduced-motion: reduce) { .blink { animation: none; } }
-  </style>
   <rect width="900" height="280" fill="#08080b"/>
 
   <!-- corner chrome -->
   <text x="40" y="34" font-size="11" letter-spacing="2" fill="#8b949e">◆ MAXIMUS BEATO</text>
   <text x="40" y="50" font-size="11" letter-spacing="2" fill="#4b5563">CTO · VERTIKALX</text>
-  <text x="860" y="34" text-anchor="end" font-size="11" letter-spacing="2" fill="#4b5563">PURDUE CS '26</text>
-  <text x="860" y="50" text-anchor="end" font-size="11" letter-spacing="2" fill="#6b7280">ONLINE <tspan fill="#3fb950">●</tspan></text>
+  <text x="860" y="34" text-anchor="end" font-size="11" letter-spacing="2" fill="#4b5563">PURDUE CS ALUM</text>
 
   <!-- ASCII figlet wordmark (ANSI Shadow, "Maximus Beato") -->
   <text xml:space="preserve" x="42" y="102" font-size="13" fill="#c9d1d9">
@@ -30,9 +24,8 @@
     <tspan x="42" dy="16">╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝ ╚═════╝ ╚══════╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ </tspan>
   </text>
 
-  <!-- centered tagline + blinking cursor -->
-  <text x="446" y="218" text-anchor="middle" font-size="12.5" letter-spacing="1" fill="#6b7280">building tools for the agentic web — tonos · apimesh · awesome-mpp</text>
-  <rect class="blink" x="812" y="208" width="9" height="14" fill="#3fb950"/>
+  <!-- centered tagline -->
+  <text x="450" y="218" text-anchor="middle" font-size="12.5" letter-spacing="1" fill="#6b7280">building tools for the agentic web — tonos · apimesh · awesome-mpp</text>
 
   <!-- link row + status -->
   <text x="40" y="256" font-size="12" fill="#8b949e">◇ tonos.fyi ↗<tspan dx="18" fill="#4b5563">|</tspan><tspan dx="18" fill="#8b949e">◇ github ↗</tspan><tspan dx="18" fill="#4b5563">|</tspan><tspan dx="18" fill="#8b949e">◇ email ↗</tspan></text>
