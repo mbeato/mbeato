@@ -10,7 +10,7 @@
   <rect width="500" height="180" rx="8" fill="none" stroke="#1e1e2e" stroke-width="1"/>
 
   <text x="24" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b8b9e" letter-spacing="0.5">this week</text>
-  <text x="476" y="30" text-anchor="end" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#f0f0f5" font-weight="600">44h 40m</text>
+  <text x="476" y="30" text-anchor="end" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#f0f0f5" font-weight="600">53h 26m</text>
 
   <line x1="24" y1="42" x2="476" y2="42" stroke="#1e1e2e" stroke-width="0.5"/>
 
@@ -45,14 +45,15 @@
     <text x="308" y="156" text-anchor="middle"
       font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#5a5a6e">Sun</text>
 
-    <text x="366" y="101.71762519561815" text-anchor="middle"
-          font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">4h18m</text>
-    <rect x="345" y="107.71762519561815" width="42" height="32.282374804381845" rx="4" fill="rgb(98,97,236)" opacity="0.85"/>
+    <text x="366" y="101.65111502347418" text-anchor="middle"
+          font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">4h19m</text>
+    <rect x="345" y="107.65111502347418" width="42" height="32.348884976525824" rx="4" fill="rgb(98,97,236)" opacity="0.85"/>
     <text x="366" y="156" text-anchor="middle"
       font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#5a5a6e">Mon</text>
 
-    
-    <rect x="403" y="138" width="42" height="2" rx="1" fill="#1e1e2e" opacity="0.5"/>
+    <text x="424" y="68.51396603579812" text-anchor="middle"
+          font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">8h45m</text>
+    <rect x="403" y="74.51396603579812" width="42" height="65.48603396420188" rx="4" fill="rgb(118,124,244)" opacity="0.85"/>
     <text x="424" y="156" text-anchor="middle"
       font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#5a5a6e">Tue</text>
 </svg>
