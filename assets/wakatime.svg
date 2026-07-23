@@ -10,50 +10,50 @@
   <rect width="500" height="180" rx="8" fill="none" stroke="#1e1e2e" stroke-width="1"/>
 
   <text x="24" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b8b9e" letter-spacing="0.5">this week</text>
-  <text x="476" y="30" text-anchor="end" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#f0f0f5" font-weight="600">47h 11m</text>
+  <text x="476" y="30" text-anchor="end" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#f0f0f5" font-weight="600">48h 1m</text>
 
   <line x1="24" y1="42" x2="476" y2="42" stroke="#1e1e2e" stroke-width="0.5"/>
 
   
-    <text x="76" y="62.27105812067056" text-anchor="middle"
-          font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">9h6m</text>
-    <rect x="55" y="68.27105812067056" width="42" height="71.72894187932944" rx="4" fill="rgb(121,129,245)" opacity="0.85"/>
-    <text x="76" y="156" text-anchor="middle"
-      font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#5a5a6e">Tue</text>
-
-    <text x="134" y="106.4378750032189" text-anchor="middle"
+    <text x="76" y="107.45634005406345" text-anchor="middle"
           font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">3h29m</text>
-    <rect x="113" y="112.4378750032189" width="42" height="27.56212499678109" rx="4" fill="rgb(95,93,235)" opacity="0.85"/>
-    <text x="134" y="156" text-anchor="middle"
+    <rect x="55" y="113.45634005406345" width="42" height="26.54365994593656" rx="4" fill="rgb(95,92,235)" opacity="0.85"/>
+    <text x="76" y="156" text-anchor="middle"
       font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#5a5a6e">Wed</text>
 
-    <text x="192" y="80.63355123219941" text-anchor="middle"
-          font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">6h46m</text>
-    <rect x="171" y="86.63355123219941" width="42" height="53.366448767800584" rx="4" fill="rgb(110,114,241)" opacity="0.85"/>
-    <text x="192" y="156" text-anchor="middle"
+    <text x="134" y="82.41709347022791" text-anchor="middle"
+          font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">6h47m</text>
+    <rect x="113" y="88.41709347022791" width="42" height="51.58290652977209" rx="4" fill="rgb(109,112,241)" opacity="0.85"/>
+    <text x="134" y="156" text-anchor="middle"
       font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#5a5a6e">Thu</text>
 
-    <text x="250" y="64.90425668889861" text-anchor="middle"
+    <text x="192" y="67.45745604245715" text-anchor="middle"
           font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">8h46m</text>
-    <rect x="229" y="70.90425668889861" width="42" height="69.09574331110139" rx="4" fill="rgb(120,127,244)" opacity="0.85"/>
-    <text x="250" y="156" text-anchor="middle"
+    <rect x="171" y="73.45745604245715" width="42" height="66.54254395754285" rx="4" fill="rgb(118,125,244)" opacity="0.85"/>
+    <text x="192" y="156" text-anchor="middle"
       font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#5a5a6e">Fri</text>
 
-    <text x="308" y="119.29742744572914" text-anchor="middle"
+    <text x="250" y="119.84071125660293" text-anchor="middle"
           font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">1h51m</text>
-    <rect x="287" y="125.29742744572914" width="42" height="14.702572554270851" rx="4" fill="rgb(88,82,232)" opacity="0.85"/>
-    <text x="308" y="156" text-anchor="middle"
+    <rect x="229" y="125.84071125660293" width="42" height="14.15928874339707" rx="4" fill="rgb(87,82,232)" opacity="0.85"/>
+    <text x="250" y="156" text-anchor="middle"
       font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#5a5a6e">Sat</text>
 
-    <text x="366" y="83.60368758530117" text-anchor="middle"
+    <text x="308" y="85.46591275450736" text-anchor="middle"
           font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">6h23m</text>
-    <rect x="345" y="89.60368758530117" width="42" height="50.39631241469883" rx="4" fill="rgb(109,112,240)" opacity="0.85"/>
-    <text x="366" y="156" text-anchor="middle"
+    <rect x="287" y="91.46591275450736" width="42" height="48.53408724549264" rx="4" fill="rgb(108,110,240)" opacity="0.85"/>
+    <text x="308" y="156" text-anchor="middle"
       font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#5a5a6e">Sun</text>
 
-    <text x="424" y="49" text-anchor="middle"
-          font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">10h47m</text>
-    <rect x="403" y="55" width="42" height="85" rx="4" fill="rgb(129,140,248)" opacity="0.85"/>
-    <text x="424" y="156" text-anchor="middle"
+    <text x="366" y="49" text-anchor="middle"
+          font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">11h12m</text>
+    <rect x="345" y="55" width="42" height="85" rx="4" fill="rgb(129,140,248)" opacity="0.85"/>
+    <text x="366" y="156" text-anchor="middle"
       font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#5a5a6e">Mon</text>
+
+    <text x="424" y="61.96195719564517" text-anchor="middle"
+          font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#8b8b9e">9h29m</text>
+    <rect x="403" y="67.96195719564517" width="42" height="72.03804280435483" rx="4" fill="rgb(121,129,245)" opacity="0.85"/>
+    <text x="424" y="156" text-anchor="middle"
+      font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#5a5a6e">Tue</text>
 </svg>
