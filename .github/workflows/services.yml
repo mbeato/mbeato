@@ -1,0 +1,30 @@
+name: Update Services Panel
+
+on:
+  schedule:
+    - cron: '45 0 * * *'  # daily at 12:45 AM UTC
+  workflow_dispatch:  # manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate services SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-services.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/services.svg
+          git diff --staged --quiet || (git commit -m "update services panel" && git push)

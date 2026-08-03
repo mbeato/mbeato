@@ -1,0 +1,17 @@
+{
+  "modules": [
+    "typescript", "react", "nextjs", "nestjs", "graphql", "react-native",
+    "bun", "hono", "postgres", "redis", "docker", "kubernetes", "aws", "stripe"
+  ],
+  "units": [
+    { "unit": "vertikalx", "repo": null, "status": "active", "blurb": "athlete sponsorship platform · CTO · 3-engineer team", "meta": "private" },
+    { "unit": "recense", "repo": "recense", "status": "active", "blurb": "brain-inspired memory engine for AI agents" },
+    { "unit": "jobfill", "repo": "jobfill", "status": "active", "blurb": "self-hosted job-application assistant" },
+    { "unit": "tonos", "repo": null, "status": "active", "blurb": "voice profile API · tonos.fyi", "meta": "private" },
+    { "unit": "contextscope", "repo": "contextscope", "status": "active", "blurb": "context auditor for Claude Code · npm @mbeato/contextscope" },
+    { "unit": "apimesh", "repo": "APIMesh", "status": "shipped", "blurb": "23 pay-per-call APIs + 16-tool MCP server" },
+    { "unit": "stitch", "repo": "stitch", "status": "shipped", "blurb": "transcript-first browser video editor" },
+    { "unit": "anti-slop-design", "repo": "anti-slop-design", "status": "shipped", "blurb": "corpus-grounded design variant generator" },
+    { "unit": "awesome-mpp", "repo": "awesome-mpp", "status": "shipped", "blurb": "the MPP community registry" }
+  ]
+}

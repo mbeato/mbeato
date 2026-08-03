@@ -1,16 +1,22 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header.svg?v=3" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/header.svg?v=3" />
-  <img alt="Maximus Beato" src="assets/header.svg?v=3" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header.svg?v=4" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/header.svg?v=4" />
+  <img alt="Maximus Beato" src="assets/header.svg?v=4" width="100%" />
 </picture>
 
 <br/>
 
 #### what i'm building
 
+**[recense](https://github.com/mbeato/recense)** — Brain-inspired memory engine for AI agents — learns schemas and corrects beliefs in place instead of accumulating stale duplicates. Runs as the memory layer behind my own agent setup.
+
 <a href="https://tonos.fyi"><img src="assets/tonos-icon.png" height="20" width="20" align="top" /></a> **[Tonos](https://tonos.fyi)** — Voice profile API. Submit writing samples, get a structured voice profile back. Any app or AI agent calls it to generate messages that sound like you, not like AI. Bun + Hono + PostgreSQL + Claude structured outputs. Stripe billing + MCP server + OAuth 2.1.
 
 **[APIMesh](https://github.com/mbeato/APIMesh)** — Built 23 web analysis APIs + a 16-tool MCP server with autonomous API generation: security audits, SEO, tech-stack detection. Dual payments via x402 + Stripe MPP, self-deployed on Hetzner with Bun/Hono behind Caddy. Ran 1,000+ req/day at 99% uptime.
+
+**[jobfill](https://github.com/mbeato/jobfill)** — Self-hosted job-application assistant: a local helper plus a Chrome extension that maps and fills application forms from your own profile. Never auto-submits.
+
+**[stitch](https://github.com/mbeato/stitch)** — Browser-based video editor — edit by editing the transcript. Local Whisper, WebGL2 shaders, face-tracked reframe, multi-track timeline, all client-side.
 
 **[awesome-mpp](https://github.com/mbeato/awesome-mpp)** — The community registry for Machine Payments Protocol — 180+ tools, SDKs, and services across 15+ chains.
 
@@ -26,32 +32,9 @@ Agentic, context-engineering workflow — reusable skills, durable project conte
 
 **[anti-slop-design](https://github.com/mbeato/anti-slop-design)** — slash-command suite generating 3 structurally distinct design variants of any component, rendered via Playwright and auto-scored on a 6-dimension anti-slop rubric against a local 281-app corpus.
 
-#### stack
+#### services
 
-<p align="center">
-  <a href="https://www.typescriptlang.org"><img height="32" width="32" src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" /></a>&nbsp;&nbsp;
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img height="32" width="32" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" /></a>&nbsp;&nbsp;
-  <a href="https://www.python.org"><img height="32" width="32" src="https://cdn.simpleicons.org/python/3776AB" alt="Python" /></a>&nbsp;&nbsp;
-  <a href="https://react.dev"><img height="32" width="32" src="https://cdn.simpleicons.org/react/61DAFB" alt="React" /></a>&nbsp;&nbsp;
-  <a href="https://nextjs.org"><img height="32" width="32" src="https://cdn.simpleicons.org/nextdotjs/white" alt="Next.js" /></a>&nbsp;&nbsp;
-  <a href="https://nestjs.com"><img height="32" width="32" src="https://cdn.simpleicons.org/nestjs/E0234E" alt="NestJS" /></a>&nbsp;&nbsp;
-  <a href="https://graphql.org"><img height="32" width="32" src="https://cdn.simpleicons.org/graphql/E10098" alt="GraphQL" /></a>&nbsp;&nbsp;
-  <a href="https://reactnative.dev"><img height="32" width="32" src="https://cdn.simpleicons.org/react/61DAFB" alt="React Native" /></a>&nbsp;&nbsp;
-  <a href="https://bun.sh"><img height="32" width="32" src="https://cdn.simpleicons.org/bun/FBF0DF" alt="Bun" /></a>&nbsp;&nbsp;
-  <a href="https://hono.dev"><img height="32" width="32" src="https://cdn.simpleicons.org/hono/E36002" alt="Hono" /></a>
-</p>
-<p align="center">
-  <a href="https://nodejs.org"><img height="32" width="32" src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js" /></a>&nbsp;&nbsp;
-  <a href="https://www.postgresql.org"><img height="32" width="32" src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" /></a>&nbsp;&nbsp;
-  <a href="https://redis.io"><img height="32" width="32" src="https://cdn.simpleicons.org/redis/FF4438" alt="Redis" /></a>&nbsp;&nbsp;
-  <a href="https://www.docker.com"><img height="32" width="32" src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" /></a>&nbsp;&nbsp;
-  <a href="https://kubernetes.io"><img height="32" width="32" src="https://cdn.simpleicons.org/kubernetes/326CE5" alt="Kubernetes" /></a>&nbsp;&nbsp;
-  <a href="https://aws.amazon.com"><img height="32" width="32" src="https://cdn.simpleicons.org/amazonwebservices/FF9900" alt="AWS" /></a>&nbsp;&nbsp;
-  <a href="https://stripe.com"><img height="32" width="32" src="https://cdn.simpleicons.org/stripe/635BFF" alt="Stripe" /></a>&nbsp;&nbsp;
-  <a href="https://vercel.com"><img height="32" width="32" src="https://cdn.simpleicons.org/vercel/white" alt="Vercel" /></a>&nbsp;&nbsp;
-  <a href="https://caddyserver.com"><img height="32" width="32" src="https://cdn.simpleicons.org/caddy/1F88C0" alt="Caddy" /></a>&nbsp;&nbsp;
-  <a href="https://git-scm.com"><img height="32" width="32" src="https://cdn.simpleicons.org/git/F05032" alt="Git" /></a>
-</p>
+<img src="assets/services.svg?v=1" width="100%" alt="live project status panel — regenerated daily from the GitHub API" />
 
 #### this week
 
