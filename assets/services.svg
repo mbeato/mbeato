@@ -9,7 +9,7 @@
   <text xml:space="preserve" x="42" y="94" font-size="13"><tspan fill="#3fb950">● </tspan><tspan fill="#c9d1d9">vertikalx.service             </tspan><tspan fill="#3fb950">active (running)    </tspan><tspan fill="#4b5563">private</tspan></text>
   <text xml:space="preserve" x="42" y="112" font-size="13"><tspan fill="#4b5563">     └─ </tspan><tspan fill="#8b949e">athlete sponsorship platform · CTO · 3-engineer team</tspan></text>
   <text xml:space="preserve" x="42" y="137" font-size="13"><tspan fill="#3fb950">● </tspan><tspan fill="#c9d1d9">recense.service               </tspan><tspan fill="#3fb950">active (running)    </tspan><tspan fill="#4b5563">since 2026-06</tspan></text>
-  <text xml:space="preserve" x="42" y="155" font-size="13"><tspan fill="#4b5563">     └─ </tspan><tspan fill="#8b949e">brain-inspired memory engine for AI agents · TypeScript · 624 commits/30d</tspan></text>
+  <text xml:space="preserve" x="42" y="155" font-size="13"><tspan fill="#4b5563">     └─ </tspan><tspan fill="#8b949e">brain-inspired memory engine for AI agents · TypeScript · 859 commits/30d</tspan></text>
   <text xml:space="preserve" x="42" y="180" font-size="13"><tspan fill="#3fb950">● </tspan><tspan fill="#c9d1d9">jobfill.service               </tspan><tspan fill="#3fb950">active (running)    </tspan><tspan fill="#4b5563">since 2026-07</tspan></text>
   <text xml:space="preserve" x="42" y="198" font-size="13"><tspan fill="#4b5563">     └─ </tspan><tspan fill="#8b949e">self-hosted job-application assistant · TypeScript · 490 commits/30d</tspan></text>
   <text xml:space="preserve" x="42" y="223" font-size="13"><tspan fill="#3fb950">● </tspan><tspan fill="#c9d1d9">tonos.service                 </tspan><tspan fill="#3fb950">active (running)    </tspan><tspan fill="#4b5563">private</tspan></text>
@@ -23,5 +23,5 @@
   <text xml:space="preserve" x="42" y="403" font-size="13"><tspan fill="#8b949e">Loaded modules: </tspan><tspan fill="#6b7280">typescript · react · nextjs · nestjs · graphql · react-native · bun</tspan></text>
   <text xml:space="preserve" x="42" y="421" font-size="13"><tspan fill="#8b949e">                </tspan><tspan fill="#6b7280">hono · postgres · redis · docker · kubernetes · aws · stripe</tspan></text>
 
-  <text x="450" y="455" text-anchor="middle" font-size="11" letter-spacing="1" fill="#4b5563">21 public repos · 1120 commits across tracked units in the last 30 days</text>
+  <text x="450" y="455" text-anchor="middle" font-size="11" letter-spacing="1" fill="#4b5563">21 public repos · 1355 commits across tracked units in the last 30 days</text>
 </svg>
