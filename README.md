@@ -1,14 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header.svg?v=4" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/header.svg?v=4" />
-  <img alt="Maximus Beato" src="assets/header.svg?v=4" width="100%" />
-</picture>
-
-<br/>
-
-#### services
-
-<img src="assets/services.svg?v=1" width="100%" alt="live project status panel — regenerated daily from the GitHub API" />
+<img src="assets/profile.svg?v=1" width="100%" alt="Maximus Beato — live project status, regenerated daily from the GitHub API" />
 
 <sub>◇ tonos.service runs at <a href="https://tonos.fyi">tonos.fyi</a> — everything else is pinned below</sub>
 

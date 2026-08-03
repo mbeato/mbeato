@@ -1,4 +1,4 @@
-name: Update Services Panel
+name: Update Profile Panel
 
 on:
   schedule:
@@ -17,14 +17,14 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Generate services SVG
+      - name: Generate profile SVG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/generate-services.js
+        run: node scripts/generate-profile.js
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/services.svg
-          git diff --staged --quiet || (git commit -m "update services panel" && git push)
+          git add assets/profile.svg
+          git diff --staged --quiet || (git commit -m "update profile panel" && git push)
