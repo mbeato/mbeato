@@ -11,6 +11,7 @@ const { join } = require("node:path");
 const wordmark = require("./wordmark");
 
 const OWNER = "mbeato";
+const WAKATIME_JSON_URL = "https://wakatime.com/share/@mbeato/b524563d-2ec4-4714-af31-e2f5794b903d.json";
 const config = JSON.parse(readFileSync(join(__dirname, "..", "services.json"), "utf8"));
 
 const token = process.env.GITHUB_TOKEN;
@@ -53,6 +54,14 @@ async function fetchData() {
   const json = await res.json();
   if (json.errors) throw new Error(`GraphQL errors: ${JSON.stringify(json.errors)}`);
   return json.data;
+}
+
+// Public share JSON, no auth. A failed fetch skips the section rather than
+// breaking the daily panel regen.
+async function fetchWakatime() {
+  const res = await fetch(WAKATIME_JSON_URL);
+  if (!res.ok) throw new Error(`wakatime ${res.status}`);
+  return (await res.json()).data;
 }
 
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -154,6 +163,62 @@ async function main() {
     LH
   );
 
+  let waka = null;
+  try {
+    waka = await fetchWakatime();
+  } catch (e) {
+    console.warn(`wakatime fetch failed, skipping section: ${e.message}`);
+  }
+
+  let wakaSvg = "";
+  if (waka && waka.length) {
+    const divY = y + 26;
+    const chromeY = divY + 24;
+    const barTop = chromeY + 24;
+    const barBottom = barTop + 76;
+    const barW = 72;
+    const gap = (816 - 7 * barW) / 6;
+    const maxSec = Math.max(...waka.map((d) => d.grand_total.total_seconds), 3600);
+    const totalSec = waka.reduce((n, d) => n + d.grand_total.total_seconds, 0);
+    const fmt = (sec) => {
+      const h = Math.floor(sec / 3600);
+      const m = Math.floor((sec % 3600) / 60);
+      return h > 0 ? `${h}h ${m}m` : `${m}m`;
+    };
+
+    const bars = waka
+      .map((d, i) => {
+        const x = X + i * (barW + gap);
+        const sec = d.grand_total.total_seconds;
+        const ratio = sec / maxSec;
+        const h = Math.max(ratio * (barBottom - barTop), sec > 0 ? 3 : 0);
+        // intensity maps slate -> active green, same semantics as the units
+        const mix = (a, b) => Math.round(a + ratio * (b - a));
+        const fill = sec > 0 ? `rgb(${mix(33, 63)},${mix(38, 185)},${mix(45, 80)})` : "#1c2128";
+        const rect =
+          sec > 0
+            ? `<rect x="${x}" y="${(barBottom - h).toFixed(1)}" width="${barW}" height="${h.toFixed(1)}" rx="1" fill="${fill}" opacity="0.9"/>`
+            : `<rect x="${x}" y="${barBottom - 2}" width="${barW}" height="2" rx="1" fill="${fill}"/>`;
+        const time = sec > 0
+          ? `<text x="${x + barW / 2}" y="${(barBottom - h - 7).toFixed(1)}" text-anchor="middle" font-size="10" fill="${C.mid}">${fmt(sec)}</text>`
+          : "";
+        const day = new Date(d.range.date + "T12:00:00")
+          .toLocaleDateString("en-US", { weekday: "short" })
+          .toUpperCase();
+        const label = `<text x="${x + barW / 2}" y="${barBottom + 18}" text-anchor="middle" font-size="10" letter-spacing="1" fill="${C.dim}">${day}</text>`;
+        return `    ${rect}\n    ${time}\n    ${label}`;
+      })
+      .join("\n");
+
+    wakaSvg = `
+    <line x1="40" y1="${divY}" x2="860" y2="${divY}" stroke="#1f242c" stroke-width="1"/>
+    <text x="40" y="${chromeY}" font-size="11" letter-spacing="2" fill="${C.mid}">◆ THIS WEEK</text>
+    <text x="126" y="${chromeY}" font-size="11" letter-spacing="2" fill="${C.dim}"> — WAKATIME</text>
+    <text x="860" y="${chromeY}" text-anchor="end" font-size="11" letter-spacing="2" fill="${C.dim}">TOTAL ${fmt(totalSec).toUpperCase()}</text>
+${bars}`;
+    y = barBottom + 18;
+  }
+
   const footerY = y + 34;
   const height = footerY + 22;
   const updated = new Date().toISOString().slice(0, 10);
@@ -182,7 +247,7 @@ ${wm.body}
     <text x="860" y="${34 + OFF}" text-anchor="end" font-size="11" letter-spacing="2" fill="${C.dim}">UPDATED ${updated} · DAILY</text>
 
 ${textLines}
-
+${wakaSvg}
     <text x="450" y="${footerY}" text-anchor="middle" font-size="11" letter-spacing="1" fill="${C.dim}">${totalRepos} public repos · ${commits30d} commits across tracked units in the last 30 days</text>
   </g>
 </svg>

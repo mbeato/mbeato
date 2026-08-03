@@ -1,6 +1,6 @@
 <img src="assets/profile.svg?v=1" width="100%" alt="Maximus Beato — live project status, regenerated daily from the GitHub API" />
 
-<sub>◇ tonos.service runs at <a href="https://tonos.fyi">tonos.fyi</a> — everything else is pinned below</sub>
+<sub>◇ tonos.service runs at <a href="https://tonos.fyi">tonos.fyi</a> · hours via <a href="https://wakatime.com/@mbeato">wakatime</a> — everything else is pinned below</sub>
 
 #### at VertikalX
 
@@ -13,14 +13,6 @@ Agentic, context-engineering workflow — reusable skills, durable project conte
 **[contextscope](https://github.com/mbeato/contextscope)** — CLI + local dashboard auditing Claude Code's per-turn token context (skills, agents, commands, hooks, MCP), with toggle-based control to cut what you don't use. On npm as `@mbeato/contextscope`.
 
 **[anti-slop-design](https://github.com/mbeato/anti-slop-design)** — slash-command suite generating 3 structurally distinct design variants of any component, rendered via Playwright and auto-scored on a 6-dimension anti-slop rubric against a local 281-app corpus.
-
-#### this week
-
-<div align="center">
-  <a href="https://wakatime.com/@mbeato"><img src="assets/wakatime.svg" alt="WakaTime coding activity" /></a>
-</div>
-
-<br/>
 
 <div align="center">
   <sub>building something at a seed-stage company? <a href="mailto:maximus.beato@gmail.com">i'd love to chat</a></sub>
