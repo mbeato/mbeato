@@ -45,7 +45,7 @@
     <line x1="40" y1="282" x2="860" y2="282" stroke="#1f242c" stroke-width="1"/>
     <text x="40" y="306" font-size="11" letter-spacing="2" fill="#8b949e">◆ SERVICES</text>
     <text x="118" y="306" font-size="11" letter-spacing="2" fill="#4b5563"> — LIVE FROM THE GITHUB API</text>
-    <text x="860" y="306" text-anchor="end" font-size="11" letter-spacing="2" fill="#4b5563">UPDATED 2026-08-08 · DAILY</text>
+    <text x="860" y="306" text-anchor="end" font-size="11" letter-spacing="2" fill="#4b5563">UPDATED 2026-08-09 · DAILY</text>
 
     <text xml:space="preserve" x="42" y="366" font-size="13"><tspan fill="#3fb950">● </tspan><tspan fill="#c9d1d9">vertikalx.service             </tspan><tspan fill="#3fb950">active (running)    </tspan><tspan fill="#4b5563">private</tspan></text>
     <text xml:space="preserve" x="42" y="384" font-size="13"><tspan fill="#4b5563">     └─ </tspan><tspan fill="#8b949e">athlete sponsorship platform · CTO · 3-engineer team</tspan></text>
@@ -67,28 +67,28 @@
     <line x1="40" y1="719" x2="860" y2="719" stroke="#1f242c" stroke-width="1"/>
     <text x="40" y="743" font-size="11" letter-spacing="2" fill="#8b949e">◆ THIS WEEK</text>
     <text x="126" y="743" font-size="11" letter-spacing="2" fill="#4b5563"> — WAKATIME</text>
-    <text x="860" y="743" text-anchor="end" font-size="11" letter-spacing="2" fill="#4b5563">TOTAL 68H 18M</text>
-    <rect x="42" y="779.8" width="72" height="63.2" rx="1" fill="rgb(58,160,74)" opacity="0.9"/>
-    <text x="78" y="772.8" text-anchor="middle" font-size="10" fill="#8b949e">10h 48m</text>
-    <text x="78" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">FRI</text>
-    <rect x="166" y="811.1" width="72" height="31.9" rx="1" fill="rgb(46,100,60)" opacity="0.9"/>
-    <text x="202" y="804.1" text-anchor="middle" font-size="10" fill="#8b949e">5h 27m</text>
-    <text x="202" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">SAT</text>
-    <rect x="290" y="776.4" width="72" height="66.6" rx="1" fill="rgb(59,167,76)" opacity="0.9"/>
-    <text x="326" y="769.4" text-anchor="middle" font-size="10" fill="#8b949e">11h 23m</text>
-    <text x="326" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">SUN</text>
-    <rect x="414" y="768.0" width="72" height="75.0" rx="1" fill="rgb(63,183,80)" opacity="0.9"/>
-    <text x="450" y="761.0" text-anchor="middle" font-size="10" fill="#8b949e">12h 49m</text>
-    <text x="450" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">MON</text>
-    <rect x="538" y="771.3" width="72" height="71.7" rx="1" fill="rgb(61,177,78)" opacity="0.9"/>
-    <text x="574" y="764.3" text-anchor="middle" font-size="10" fill="#8b949e">12h 16m</text>
-    <text x="574" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">TUE</text>
-    <rect x="662" y="767.0" width="72" height="76.0" rx="1" fill="rgb(63,185,80)" opacity="0.9"/>
-    <text x="698" y="760.0" text-anchor="middle" font-size="10" fill="#8b949e">12h 59m</text>
-    <text x="698" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">WED</text>
-    <rect x="786" y="828.1" width="72" height="14.9" rx="1" fill="rgb(39,67,52)" opacity="0.9"/>
-    <text x="822" y="821.1" text-anchor="middle" font-size="10" fill="#8b949e">2h 33m</text>
-    <text x="822" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">THU</text>
+    <text x="860" y="743" text-anchor="end" font-size="11" letter-spacing="2" fill="#4b5563">TOTAL 72H 36M</text>
+    <rect x="42" y="812.1" width="72" height="30.9" rx="1" fill="rgb(45,98,59)" opacity="0.9"/>
+    <text x="78" y="805.1" text-anchor="middle" font-size="10" fill="#8b949e">5h 27m</text>
+    <text x="78" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">SAT</text>
+    <rect x="166" y="778.5" width="72" height="64.5" rx="1" fill="rgb(58,163,75)" opacity="0.9"/>
+    <text x="202" y="771.5" text-anchor="middle" font-size="10" fill="#8b949e">11h 23m</text>
+    <text x="202" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">SUN</text>
+    <rect x="290" y="770.4" width="72" height="72.6" rx="1" fill="rgb(62,178,78)" opacity="0.9"/>
+    <text x="326" y="763.4" text-anchor="middle" font-size="10" fill="#8b949e">12h 49m</text>
+    <text x="326" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">MON</text>
+    <rect x="414" y="773.6" width="72" height="69.4" rx="1" fill="rgb(60,172,77)" opacity="0.9"/>
+    <text x="450" y="766.6" text-anchor="middle" font-size="10" fill="#8b949e">12h 16m</text>
+    <text x="450" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">TUE</text>
+    <rect x="538" y="767.0" width="72" height="76.0" rx="1" fill="rgb(63,185,80)" opacity="0.9"/>
+    <text x="574" y="760.0" text-anchor="middle" font-size="10" fill="#8b949e">13h 25m</text>
+    <text x="574" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">WED</text>
+    <rect x="662" y="806.8" width="72" height="36.2" rx="1" fill="rgb(47,108,62)" opacity="0.9"/>
+    <text x="698" y="799.8" text-anchor="middle" font-size="10" fill="#8b949e">6h 24m</text>
+    <text x="698" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">THU</text>
+    <rect x="786" y="781.7" width="72" height="61.3" rx="1" fill="rgb(57,157,73)" opacity="0.9"/>
+    <text x="822" y="774.7" text-anchor="middle" font-size="10" fill="#8b949e">10h 50m</text>
+    <text x="822" y="861" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b5563">FRI</text>
     <text x="450" y="895" text-anchor="middle" font-size="11" letter-spacing="1" fill="#4b5563">21 public repos · 1241 commits across tracked units in the last 30 days</text>
   </g>
 </svg>
